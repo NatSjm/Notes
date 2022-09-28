@@ -1,7 +1,7 @@
 const Collection = (() => {
-    const initialCreatedAt = new Date().toLocaleDateString();
+	const initialCreatedAt = new Date().toLocaleDateString();
 
-    let notes = [
+	let notes = [
 		{
 			id: 1,
 			title: 'Note1',
@@ -59,7 +59,7 @@ const Collection = (() => {
 			isArchived: false,
 			createdAt: initialCreatedAt
 		}
-		];
+	];
 	let instance;
 	let updateId = null;
 
@@ -67,7 +67,7 @@ const Collection = (() => {
 		updateId = id;
 	};
 
-	const createNote = ({ title, content, category }) => {
+	const createNote = ({title, content, category}) => {
 		const timestamp = Date.now();
 		const newNote = {
 			id: timestamp,
@@ -80,10 +80,10 @@ const Collection = (() => {
 		const newNotes = [...notes, newNote];
 		notes = newNotes;
 		return newNotes;
-		};
+	};
 
-	const updateNote = ({ title, content, category }) => {
-		if(!updateId) return;
+	const updateNote = ({title, content, category}) => {
+		if (!updateId) return;
 
 		const updatedNoteIndex = notes.findIndex(({id}) => id === updateId);
 
@@ -99,14 +99,14 @@ const Collection = (() => {
 	};
 
 	const toggleArchived = (noteId) => {
-		const noteIndex = notes.findIndex(({id}) => id === noteId );
+		const noteIndex = notes.findIndex(({id}) => id === noteId);
 		const note = notes[noteIndex];
-		 const newNote = {
+		const newNote = {
 			...note,
-			 isArchived: !note.isArchived
+			isArchived: !note.isArchived
 		};
 		notes[noteIndex] = newNote;
-		 return notes;
+		return notes;
 	};
 
 	const deleteNote = (noteId) => {
@@ -115,8 +115,8 @@ const Collection = (() => {
 		return newNotes;
 	};
 
-	const getNotes =  () => {
-		return  notes;
+	const getNotes = () => {
+		return notes;
 	};
 
 	const getUpdateId = () => updateId;

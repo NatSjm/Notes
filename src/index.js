@@ -4,10 +4,9 @@ import Collection from './list/Collection';
 import './index.scss';
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
-    const notes = Collection.getInstance().getNotes();
-    renderNotes(notes);
-    initHandlers();
+	const notes = Collection.getInstance().getNotes();
+	renderNotes(notes);
+	initHandlers();
 });
 

@@ -60,6 +60,7 @@ body {
     font-weight: 500;
     margin-top: 20px;
 }
+
 .note {
     display: flex;
     justify-content: space-between;
@@ -69,25 +70,31 @@ body {
         white-space: nowrap;
         text-overflow: ellipsis;
         padding: 5px;
+
         &.note-title {
             font-weight: 600;
         }
     }
 }
+
 .popup textarea::-webkit-scrollbar {
     width: 0;
 }
+
 .popup textarea:hover::-webkit-scrollbar {
     width: 5px;
 }
+
 .popup textarea:hover::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 25px;
 }
+
 .popup textarea:hover::-webkit-scrollbar-thumb {
     background: #e6e6e6;
     border-radius: 25px;
 }
+
 .popup-box {
     position: fixed;
     top: 0;
@@ -207,18 +214,20 @@ form button {
 
 #notes-list,
 #archive,
-#categories{
+#categories {
     flex-direction: column;
     display: flex;
     gap: 5px;
     margin-bottom: 40px;
 }
 
-#categories li{
+#categories li {
     display: flex;
     justify-content: space-between;
+
     & > * {
         width: 33%;
+
         &:first-child {
             font-weight: 600;
         }
@@ -235,33 +244,40 @@ form button {
     padding: 20px;
     color: white;
     font-weight: bold;
+
     &.categories-header {
         & > * {
             width: 33%;
         }
     }
+
     &.archive-header {
         margin-top: 50px;
         display: none;
+
         &.show {
             display: flex;
         }
     }
-    .controls  i{
+
+    .controls i {
         color: white;
         font-size: 20px;
         font-weight: bold;
     }
 }
+
 .details {
     width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     > * {
         width: 20%;
     }
 }
+
 .controls {
     width: 15%;
     display: flex;
@@ -270,7 +286,8 @@ form button {
     align-items: center;
 
 }
-.controls button{
+
+.controls button {
     border: none;
     outline: none;
     cursor: pointer;
