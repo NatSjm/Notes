@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Notes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+<div class="popup-box">
+	<div class="popup">
+		<div class="content">
+			<header>
+				<p></p>
+				<i class="uil uil-times"></i>
+			</header>
+			<form action="#">
+				<div class="row title">
+					<label>Title</label>
+					<input type="text" spellcheck="false">
+				</div>
+				<div class="row description">
+					<label>Content</label>
+					<textarea spellcheck="false"></textarea>
+				</div>
+				<div class="row category">
+					<label>Category</label>
+					<select  name="category" id="category">
+						                        <option value="task">Task</option>
+						                        <option value="thought">Random thought</option>
+						                        <option value="idea">Idea</option>
+						                    </select>
+				</div>
+				<button></button>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="wrapper">
+	<div class="table-wrapper">
+	<div class="table-header">
+		<div class="details">
+		<span>Name</span>
+		<span>Created</span>
+		<span>Category</span>
+		<span>Content</span>
+		<span>Dates</span>
+		</div>
+		<div class="controls">
+			<i class="uil uil-pen"></i>
+			<i class="uil uil-trash-alt"></i>
+			<i class="uil uil uil-import"></i>
+		</div>
+	</div>
+	<div class="add-box">
+		<div class="icon"><i class="uil uil-plus"></i></div>
+		<p>Create a note</p>
+	</div>
+		<ul id="notes-list">
+
+		</ul>
+	</div>
+	<div class="table-wrapper">
+			<div class="table-header categories-header">
+				<div>Note category</div>
+				<div>Active</div>
+				<div>Archived</div>
+			</div>
+		<ul id="categories">
+		</ul>
+		</div>
+
+	<div class="table-wrapper">
+		<div class="table-header archive-header">
+			<div class="details">
+				<span>Name</span>
+				<span>Created</span>
+				<span>Category</span>
+				<span>Content</span>
+				<span>Dates</span>
+			</div>
+			<div class="controls">
+				<i class="uil uil-pen"></i>
+				<i class="uil uil-trash-alt"></i>
+				<i class="uil uil uil-upload"></i>
+			</div>
+		</div>
+		<ul id="archive">
+		</ul>
+	</div>
+</div>
+</body>
+</html>
+
+
+
